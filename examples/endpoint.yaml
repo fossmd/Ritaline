@@ -1,0 +1,18 @@
+# OpenAI-compatible endpoint used to GENERATE the Q&A data.
+# Keep secrets in environment variables, never in this file.
+base_url: https://api.deepseek.com
+model: deepseek-v4-flash
+api_key_env: DEEPSEEK_API_KEY
+chat_completions_path: /chat/completions
+timeout_seconds: 120
+max_retries: 5
+retry_backoff_seconds: 1.5
+max_concurrency: 4
+temperature: 0.2
+max_tokens: 800
+response_format: json_object
+headers: {}
+# Provider-specific fields are merged into the JSON request body.
+extra_body:
+  thinking:
+    type: disabled

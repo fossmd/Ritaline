@@ -1,0 +1,1 @@
+Ritaline is an example package. It extracts text, generates grounded question-answer pairs, and can fine-tune an open-weight causal language model using LoRA, QLoRA, or full training.
